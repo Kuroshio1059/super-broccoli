@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growly – Marketing That Converts</title>
+  <meta name="description" content="High-converting marketing website" />
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    .nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .nav-btn {
+      background: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+    }
+
+    /* HERO */
+    header {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: white;
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.9rem 2rem;
+      background: white;
+      color: var(--primary);
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .card p {
+      color: var(--gray);
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      border-radius: 1.5rem;
+      padding: 4rem 2rem;
+      margin: 4rem 1.5rem;
+    }
+
+    .cta a {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* FORM */
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <strong>Growly</strong>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact" class="nav-btn">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header>
+    <h1>Marketing That Actually Converts</h1>
+    <p>We help brands grow faster with proven strategies and beautiful design.</p>
+    <a href="#contact" class="btn">Start Now</a>
+  </header>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="features">
+      <div class="card">
+        <h3>🚀 Growth Focused</h3>
+        <p>Optimized campaigns designed to scale your business.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Targeted Strategy</h3>
+        <p>Reach customers who actually convert.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Data Driven</h3>
+        <p>Every decision backed by analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2 style="text-align:center;margin-bottom:2rem;">What Clients Say</h2>
+    <div class="features">
+      <div class="card">
+        <p>“We doubled our revenue in 90 days.”</p>
+        <strong>— Alex</strong>
+      </div>
+      <div class="card">
+        <p>“Best marketing decision we made.”</p>
+        <strong>— Sarah</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <h2 style="text-align:center;margin-bottom:2rem;">Pricing</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Starter</h3>
+        <h2>$99</h2>
+        <p>Small businesses</p>
+      </div>
+      <div class="card">
+        <h3>Growth</h3>
+        <h2>$299</h2>
+        <p>Scaling companies</p>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <h2>Custom</h2>
+        <p>Advanced solutions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h2>Ready to Scale?</h2>
+    <p>Let’s build something great.</p>
+    <a href="#contact" class="btn">Contact Us</a>
+  </div>
+
+  <!-- CONTACT / FEEDBACK -->
+  <section id="contact">
+    <h2 style="text-align:center;margin-bottom:2rem;">Send Us Feedback</h2>
+
+    <form
+      action="https://formsubmit.co/kuroshio1059@gmail.com"
+      method="POST"
+      class="card"
+      style="max-width:500px;margin:auto;"
+    >
+      <!-- CONFIG -->
+      <input type="hidden" name="_subject" value="New Website Feedback">
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- FIELDS -->
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Growly Marketing. All rights reserved.
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute("href"))
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+</body>
+</html>
+
